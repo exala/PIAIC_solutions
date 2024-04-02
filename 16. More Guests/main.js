@@ -1,0 +1,23 @@
+var guests = ['Harry', 'Ron', 'Hermione'];
+console.log("Dear ".concat(guests[0], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[1], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[2], ", you are cordially invited to a dinner at my place."));
+console.log("".concat(guests[1], " cannot make it."));
+// change the name Ron by Draco
+guests[1] = 'Draco';
+console.log("Dear ".concat(guests[0], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[1], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[2], ", you are cordially invited to a dinner at my place."));
+console.log('\nWe have found three more people at our table\n');
+var firstNewPerson = 'Dumbledore';
+var secondNewPerson = 'Longbottom';
+var thirdNewPerson = 'Ginny';
+guests.unshift(firstNewPerson);
+guests.splice(2, 0, secondNewPerson);
+guests.push(thirdNewPerson);
+console.log("Dear ".concat(guests[0], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[1], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[2], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[3], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[4], ", you are cordially invited to a dinner at my place."));
+console.log("Dear ".concat(guests[5], ", you are cordially invited to a dinner at my place."));
